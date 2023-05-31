@@ -100,8 +100,7 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderSpinner();
 
     //Upload new recipe data
-    await model.uploadRecipe(newRecipe)
-    console.log(model.state.recipe);
+    await model.uploadRecipe(newRecipe);
 
     //Render Recipe
     recipeView.render(model.state.recipe);
